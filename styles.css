@@ -1,0 +1,311 @@
+/* Import Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+/* Headings, Call-to-actions, Header Navigation => Raleway(400,700) */
+/* Body => Open Sans(400) */
+/* ------------------------------ */
+/* Colors */
+:root {
+  --Very-Dark-Blue: hsl(243, 87%, 12%);
+  --Desaturated-Blue: hsl(238, 22%, 44%);
+  --Bright-Blue: hsl(224, 93%, 58%);
+  --Moderate-Cyan: hsl(170, 45%, 43%);
+  --Light-Grayish-Blue: hsl(240, 75%, 98%);
+  --Light-Gray: hsl(0, 0%, 75%);
+}
+/* ------------------------------ */
+/* Style For all */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 16px;
+  background-color: var(--Light-Grayish-Blue);
+}
+/* ------------------------------ */
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-family: Raleway;
+  font-weight: 700;
+  box-shadow: 1px 1px 5px var(--Very-Dark-Blue);
+  background-color: var(--Light-Grayish-Blue);
+}
+/* logo */
+.logo {
+  height: 100%;
+}
+/* Header navigation links */
+nav ul {
+  list-style-type: none;
+}
+.nav-link {
+  text-decoration: none;
+  color: var(--Very-Dark-Blue);
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+  }
+  nav {
+    text-align: center;
+    width: 100%;
+  }
+  nav ul li {
+    padding: 10px;
+  }
+  nav ul li:active {
+    background-color: var(--Desaturated-Blue);
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  header {
+    justify-content: space-between;
+    padding: 20px;
+  }
+  nav {
+    width: 50%;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  header {
+    font-size: 1.1rem;
+  }
+  nav {
+    width: 30%;
+  }
+}
+/* ------------------------------ */
+/* Main */
+h1 {
+  font-family: Raleway;
+}
+p {
+  font-family: "Open Sans";
+}
+/* section 1&2&3 */
+.section-1,
+.section-2,
+.section-3 {
+  scroll-margin-top: 190px;
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+.section-1 {
+  margin: 190px 20px 20px 20px;
+}
+.section-2 {
+  margin: 20px;
+}
+.section-3 {
+  background-color: var(--Desaturated-Blue);
+  color: var(--Light-Grayish-Blue);
+  padding: 20px;
+}
+/* Common between section 1-2-3 */
+.section-1 h1,
+.section-2 h1,
+.section-3 h1 {
+  font-size: 1.5rem;
+}
+.section-1 p,
+.section-2 p,
+.section-3 p {
+  margin: 20px 0;
+}
+.illustration-1,
+.illustration-2 {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+/* Section-1 button */
+.section-button {
+  border: none;
+  background-color: var(--Bright-Blue);
+  color: var(--Light-Grayish-Blue);
+  padding: 10px 20px;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.section-button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+main i {
+  margin-left: 10px;
+}
+/* Section-2 greenDiv */
+.green-div {
+  text-align: center;
+  color: var(--Moderate-Cyan);
+  margin-bottom: 15px;
+}
+.green-div:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+.green-div p {
+  border-bottom: 1px solid var(--Moderate-Cyan);
+  margin: 0;
+  display: inline-block;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .section-1,
+  .section-2 {
+    text-align: left;
+  }
+} /* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .section-1,
+  .section-2,
+  .section-3 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+
+    gap: 3rem;
+  }
+  .section-1 {
+    margin: 190px 5rem 0 5rem;
+  }
+  .section-2 {
+    margin: 5rem;
+  }
+  .section-3 {
+    padding: 3rem 5rem;
+  }
+  .section-text {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: justify;
+  }
+  .section-1 h1,
+  .section-2 h1,
+  .section-3 h1 {
+    font-size: 2rem;
+  }
+  .section-1 p,
+  .section-2 p,
+  .section-3 p {
+    font-size: 1.2rem;
+  }
+  .illustration-1,
+  .illustration-2 {
+    grid-column: 2/-1;
+  }
+  .section-button {
+    width: 30%;
+  }
+  .green-div {
+    text-align: left;
+  }
+}
+/* Section-3 form */
+form input[type="email"],
+form input[type="submit"] {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  padding-left: 20px;
+  font-size: 18px;
+  font-family: Raleway;
+}
+input[type="submit"] {
+  margin-top: 1rem;
+  background-color: var(--Bright-Blue);
+  color: var(--Light-Grayish-Blue);
+  font-weight: 700;
+}
+input[type="submit"]:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+form input[type="email"]::placeholder {
+  font-size: 18px;
+  font-family: Raleway;
+  letter-spacing: 1.5px;
+}
+form input[type="email"]:focus {
+  outline: 2px solid var(--Very-Dark-Blue);
+}
+@media only screen and (min-width: 600px) {
+  form input[type="email"],
+  form input[type="submit"] {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  form input[type="email"],
+  form input[type="submit"] {
+    width: 100%;
+  }
+}
+/* ------------------------------ */
+/* footer */
+footer {
+  background-color: var(--Very-Dark-Blue);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, max-content);
+  padding: 20px;
+  color: var(--Light-Grayish-Blue);
+  gap: 1rem;
+}
+.logo-phone-mail .logo {
+  width: 50%;
+  height: auto;
+}
+footer p,
+footer .logo {
+  margin: 1rem;
+}
+
+.logo-phone-mail i {
+  margin-right: 1rem;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-icons p {
+  font-size: 2rem;
+}
+footer p:hover {
+  cursor: pointer;
+}
+@media only screen and (min-width: 992px) {
+  footer {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    padding: 20px;
+    color: var(--Light-Grayish-Blue);
+    gap: 1rem;
+  }
+  .social-icons {
+    align-items: flex-start;
+  }
+}

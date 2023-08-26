@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Fylo landing page with two column layout</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- __Header__ -->
+    <header id="header">
+      <!-- _logo_ -->
+      <img
+        src="./images/logo.svg"
+        alt="Fylo Logo"
+        id="header-img"
+        class="logo"
+      />
+      <!-- _navLinks_ -->
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" href="#features">Features</a></li>
+          <li><a class="nav-link" href="#team">Team</a></li>
+          <li><a class="nav-link" href="#sign-in">Sign In</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- __Main__ -->
+    <main>
+      <!-- _sectionOne_ -->
+      <section id="features" class="section-1">
+        <div class="section-image">
+          <img
+            src="./images/illustration-1.svg"
+            alt="illustration-1"
+            class="illustration-1"
+          />
+        </div>
+        <div class="section-text">
+          <h1>All your files in one secure location, accessible anywhere.</h1>
+          <p>
+            Fylo stores your most important files in one secure location. Access
+            them wherever you need, share and collaborate with friends, family,
+            and co-workers.
+          </p>
+          <div class="button-div">
+            <button class="section-button">
+              Get Started<i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- _sectionTwo_ -->
+      <section id="team" class="section-2">
+        <div class="section-image">
+          <img
+            src="./images/illustration-2.svg"
+            alt="illustration-2"
+            class="illustration-2"
+          />
+        </div>
+        <div class="section-text">
+          <h1>All your files in one secure location, accessible anywhere.</h1>
+          <p>
+            Fylo stores your most important files in one secure location. Access
+            them wherever you need, share and collaborate with friends, family,
+            and co-workers.
+          </p>
+          <div class="green-div">
+            <p>
+              See how Fylo works<i class="fa-solid fa-circle-arrow-right"></i>
+            </p>
+          </div>
+          <iframe
+            id="video"
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/l1Ns7EHwEWE?si=nmm87GPwLXYCUMw7"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <!-- _sectionThree_ -->
+      <section id="sign-in" class="section-3">
+        <div class="section-text">
+          <h1>Get early access today</h1>
+          <p>
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.
+          </p>
+        </div>
+        <form
+          action="https://www.freecodecamp.com/email-submit"
+          method="post"
+          id="form"
+        >
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="email@example.com"
+          />
+          <input type="submit" value="Get Staeted For Free" id="submit" />
+        </form>
+      </section>
+    </main>
+    <!-- __footer__ -->
+    <footer>
+      <section class="logo-phone-mail">
+        <img src="./images/logo-light.svg" alt="logo" class="logo" />
+        <p>
+          <i class="fa-solid fa-phone" style="color: hsl(240, 75%, 98%)"></i
+          >Phone: +1-543-123-4567
+        </p>
+        <p>
+          <i class="fa-solid fa-envelope" style="color: hsl(240, 75%, 98%)"></i
+          >example@fylo.com
+        </p>
+      </section>
+      <section>
+        <p>About Us</p>
+        <p>Jobs</p>
+        <p>Press</p>
+        <p>Blog</p>
+      </section>
+      <section>
+        <p>Contact Us</p>
+        <p>Terms</p>
+        <p>Privacy</p>
+      </section>
+      <section class="social-icons">
+        <p>
+          <i
+            class="fa-brands fa-facebook"
+            style="color: hsl(240, 75%, 98%)"
+          ></i>
+        </p>
+        <p>
+          <i class="fa-brands fa-twitter" style="color: hsl(240, 75%, 98%)"></i>
+        </p>
+        <p>
+          <i
+            class="fa-brands fa-instagram"
+            style="color: hsl(240, 75%, 98%)"
+          ></i>
+        </p>
+      </section>
+    </footer>
+  </body>
+</html>
+
+<!-- 
+  Features Team Sign In All your files in one secure location, accessible anywhere. Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers. Get Started Stay productive, wherever you are Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs. Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required! See how Fylo works Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine. Kyle Burton Founder & CEO, Huddle Get early access today It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you. Get Started For Free Phone: +1-543-123-4567 example@fylo.com About Us Jobs Press Blog Contact Us Terms Privacy
+ -->
